@@ -5,3 +5,7 @@
 ## Цитата: "Я верю, что то, что тебя не убивает, делает тебя… страннее!" - Джокер Хита Леджера
 
 ![апельсин джпг](https://github.com/user-attachments/assets/c44c3205-d22e-41d0-afcb-0d5189315286)
+
+
+https://github.com/user-attachments/assets/6a03dd09-ca0b-4a5d-a1d5-df605dd89312
+

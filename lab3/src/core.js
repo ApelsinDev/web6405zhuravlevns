@@ -57,7 +57,8 @@ function isBinary(n) {
  */
 function fibonacci(n) {
     if (n <= 1) return n;
-    let a = 0, b = 1;
+    let a = 0,
+        b = 1;
     for (let i = 2; i <= n; i++) {
         [a, b] = [b, a + b];
     }
@@ -146,7 +147,9 @@ function deepEqual(firstObject, secondObject) {
     // Проверяем, что каждый ключ из первого объекта есть во втором объекте,
     // и значения этих ключей равны при рекурсивной проверке deepEqual
     return keysA.every(
-        key => keysB.includes(key) && deepEqual(firstObject[key], secondObject[key])
+        (key) =>
+            keysB.includes(key) &&
+            deepEqual(firstObject[key], secondObject[key])
     );
 }
 

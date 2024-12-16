@@ -1,0 +1,20 @@
+{
+  "/lab4/movies": {
+    "get": {
+      "data": [
+        { "title": "Ужасающий", "poster": "./images/movie1.jpg" },
+        { "title": "Оглянись", "poster": "./images/movie2.jpg" },
+        { "title": "Ёлки 3", "poster": "./images/movie3.jpg" },
+        { "title": "Новый фильм", "poster": "./images/movie4.jpg" }
+      ]
+    }
+  },
+  "/lab4/submit": {
+    "post": {
+      "data": {
+        "status": "ok",
+        "message": "Сообщение получено"
+      }
+    }
+  }
+}

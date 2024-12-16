@@ -9,7 +9,7 @@
 <body>
 <header>
   <h1>Кинотеатр АПЕЛЬСИН</h1>
-  <nav>
+  <nav class="fade-in-up">
     <ul>
       <li><a href="./main.html">Главная</a></li>
       <li><a href="./about.html">О кинотеатре</a></li>
@@ -19,15 +19,37 @@
     </ul>
   </nav>
 </header>
-<main>
+<main class="fade-in-up">
   <h2>Контакты</h2>
   <p>Телефон: +7 (800) 555-35-35</p>
   <p>Email: apelsinchikoriginal@gmail.com</p>
   <h3>Адрес</h3>
   <p>г. Самара, Аэродромная ул., 47А</p>
+
+  <h3>Связаться с нами</h3>
+  <form id="contact-form">
+    <label>
+      Имя:
+      <input type="text" name="name" required>
+    </label>
+    <br><br>
+    <label>
+      E-mail:
+      <input type="email" name="email" required>
+    </label>
+    <br><br>
+    <label>
+      Сообщение:
+      <textarea name="message" required></textarea>
+    </label>
+    <br><br>
+    <button type="submit">Отправить</button>
+  </form>
+  <p id="form-message" style="display:none;"></p>
 </main>
-</body>
 <footer>
   <p>&copy; 2024 Кинотеатр АПЕЛЬСИН</p>
 </footer>
+<script src="./scripts.js"></script>
+</body>
 </html>

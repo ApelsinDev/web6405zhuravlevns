@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles_new.css">
+  <title>Фильмы</title>
+</head>
+<body>
+<header>
+  <h1>Кинотеатр АПЕЛЬСИН</h1>
+  <nav class="fade-in-up">
+    <ul>
+      <li><a href="./index.html">Главная</a></li>
+      <li><a href="./about_new.html">О кинотеатре</a></li>
+      <li><a href="./schedule_new.html">Расписание</a></li>
+      <li><a href="./movies_new.html">Фильмы</a></li>
+      <li><a href="./contacts_new.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="fade-in-up">
+  <h2>Наши фильмы</h2>
+  <div class="movie-grid" id="movies-container"></div>
+  <div class="error-message" id="movies-error" style="display:none;">
+    Не удалось загрузить список фильмов. Попробуйте обновить страницу позже.
+  </div>
+</main>
+<footer>
+  <p>&copy; 2024 Кинотеатр АПЕЛЬСИН</p>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const response = await fetch('http://localhost:8000/lab4/movies');
+      if (!response.ok) throw new Error('Network response was not ok');
+      const data = await response.json();
+      const container = document.getElementById('movies-container');
+      data.data.forEach(movie => {
+        const div = document.createElement('div');
+        div.classList.add('movie-card', 'fade-in-up');
+        div.innerHTML = `
+        <h3>${movie.title}</h3>
+        <img src="${movie.poster}" alt="${movie.title}" class="movie-poster animated-poster">
+      `;
+        container.appendChild(div);
+      });
+    } catch (err) {
+      document.getElementById('movies-error').style.display = 'block';
+    }
+  });
+</script>
+</body>
+</html>

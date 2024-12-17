@@ -218,7 +218,7 @@ td:last-child {
 
 /* Parallax */
 .parallax-background {
-  background: url('./images/cinema_bg.jpg') no-repeat center center fixed;
+  background: url('./images/c_bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 

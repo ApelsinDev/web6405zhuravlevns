@@ -2,10 +2,10 @@
   "/lab4/movies": {
     "get": {
       "data": [
-        { "title": "Ужасающий", "poster": "./images/movie1.jpg" },
-        { "title": "Оглянись", "poster": "./images/movie2.jpg" },
-        { "title": "Ёлки 3", "poster": "./images/movie3.jpg" },
-        { "title": "Новый фильм", "poster": "./images/movie4.jpg" }
+        { "title": "Ужасающий", "poster": "./images/m1.jpg" },
+        { "title": "Оглянись", "poster": "./images/m2.jpg" },
+        { "title": "Ёлки 3", "poster": "./images/m3.jpg" },
+        { "title": "Новый фильм", "poster": "./images/m4.jpg" }
       ]
     }
   },
